@@ -6,9 +6,11 @@ namespace HomeTask5.Services.Student
 {
     public class StudentService : PersonService
     {
-        public Subjects _subjects { get; set; }
-
         private Course _course;
+
+        public Subjects _subjects { get; set; }
+        public GroupOfStudents GroupOfStudents { get; set; }
+
         public Course CurrentCourse
         {
             get { return _course; }
