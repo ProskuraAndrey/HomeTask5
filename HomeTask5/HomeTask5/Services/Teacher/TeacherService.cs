@@ -6,6 +6,8 @@ namespace HomeTask5.Services.Teacher
 {
     public class TeacherService : PersonService
     {
+        public Departments Department { get; set; }
+
         public TeacherService(string firstName, string lastName, int age) : base(firstName, lastName, age)
         { }
 
